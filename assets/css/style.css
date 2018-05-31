@@ -99,7 +99,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 1rem;
     z-index: 1111;
 }
 
@@ -107,7 +107,9 @@ video {
     width: auto;
 }
 
-.nav {
+.logo img {
+    position:relative;
+    width:70px;
 }
 
 /* Footer */
@@ -125,9 +127,6 @@ video {
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-}
-
-.copyright {
 }
 
 .socialmedia {
