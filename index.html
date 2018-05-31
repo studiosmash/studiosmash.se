@@ -1,165 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Studio Smash</title>
+	<title>Studio Smash</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <div class="header" data-scroll="">
 
-        <div class="logo">
-            <a href="./">Studio Smash</a>
-            <!--<a href="./"><img src="./img/smash_logo.svg"></a>-->
-        </div>
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+	<div class="header" data-scroll="">
+		<div class="logo">
+			<a href="./">Studio Smash</a>
+			<!--<a href="./"><img src="./img/smash_logo.svg"></a>-->
+		</div>
+		<div class="nav">
+			<nav>
+				<ul>
+					<!-- <li><a href="./about.html">About</a></li> -->
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 
-    </div>
+	<main router-wrapper>
 
-    <main router-wrapper>
-        <article router-view="home">
+        <article router-view="page">
 
-            <div class="cover-hero">
-               
-                <div class="overlay" data-scroll="overlayOut">
-                    
-                    <div class="overlayText" data-scroll="overlayText">The amazing thrill of the third dimension</div>
-                
-                </div>
-                
-                <!--<div class="project-overlay">
-                    <div class="cover-image">
-                        <img src="./img/funyard/Beckmans01.jpg" />
+            <div class="page-content row">
+                <div class="page-content--text">
+
+                    <div class="page-title">
+                        <h1 data-scroll="fadeUpStaggerLines">
+                            We are Studio Smash
+                        </h1>
                     </div>
-                </div>-->
-                
-                <div class="masking">
-                       <video src="./img/maskvideo.mp4" autoplay loop muted playsinline></video>
-                       <img src="./img/mask.svg" width="550px" height="550px"/>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        Smash is a new kind of design studio that creates ethereal brand experiences. Combining 3D, with innovative technology and visual craftsmanship, we kindle emotions, we forge memories, we evoke wonder.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        We have a new way of thinking about collaboration.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        Smash is a collaborative network of experience designers coalescing around Stockholm, Sweden. We embrace people and perspectives, individuals and ideas and stand by the fact that a collective mind is greater than one. Forming organically around projects, we draw on our in-depth knowledge of multiple fields – from 3D websites to AR applications to projection mapping shows – creating bespoke and unique experiences that people can enjoy.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        To create these moments, we have an obsessive attention to detail, use state-of-the-art technology and work closely with bold brands to turn unique ideas into profound realities.
+                        <br/><br/> Together, let’s Smash it.
+                    </p>
                 </div>
-                
-                <!--
-                <div class="hero-title" data-rellax-speed="1">
-                    <div data-scroll="coverTitle" data-scroll="coverTitle">The amazing thrill of the third dimension</div>
-                </div>
-                -->
-                
-                <div class="scroll-line"></div>
             </div>
-
-            <section class="row">
-                
-                <div class="case-container" data-scroll="imageUp">
-                
-                    <div class="case-image rellax">
-                       <img class="" src="img/svenskainstitutet/si0.jpg"/>
-                    </div>
-                
-                        <div class="case-text">
-                           <a href="./svenskainstitutet.html">
-                            <div class="case-title" data-scroll="fadeUpStaggerFirst">
-                                Sweden through time
-                            </div>
-                            <span class="horizontal-line hidden" data-scroll="lineInRight"></span>
-                            <div class="case-details" data-scroll="fadeDownStaggerSecond">
-                                Svenska Institutet
-                                <span class="tags">WebGL, Three.js</span>
-                            </div>
-                            </a>
-                        </div>
-                    
-                    
-                    <div class="case-item case-item--car">
-                           
-                            <!--<canvas class="rellax" id="car" width="600" height="600"></canvas>-->
-                    </div>
-                    
-                </div>
-                
-                <div class="case-container" data-scroll="imageUp">
-                      
-                      <div class="case-text rellax">
-                           <a href="./nutrivoate.html">
-                            <div class="case-title" data-scroll="fadeUpStaggerFirst">
-                                Nutrivoate
-                            </div>
-                            <span class="horizontal-line hidden" data-scroll="lineInLeft"></span>
-                            <div class="case-details" data-scroll="fadeDownStaggerSecond">
-                                Case description
-                            </div>
-                            </a>
-                        </div>
-                   
-                    <div class="case-image">
-                        <img class="" src="img/nutrivoate/vf1.jpg" />
-                    </div>
-
-                    <div class="case-item case-item--vf">
-                            <!--<canvas class="rellax" id="vitamin-film" width="650" height="650"></canvas>-->
-                    </div>
-                    
-                </div>
-                
-                <div class="case-container" data-scroll="imageUp">
-                   
-                    <div class="case-image rellax">
-                        <img class="" src="img/magiskamaskinen/orebro01.jpg" />
-                    </div>
-                    
-                        <div class="case-text">
-                           <a href="./magiskamaskinen.html">
-                            <div class="case-title" data-scroll="fadeUpStaggerFirst">
-                                Den magiska maskinen
-                            </div>
-                            <span class="horizontal-line hidden" data-scroll="lineInRight"></span>
-                            <div class="case-details" data-scroll="fadeDownStaggerSecond">
-                                Case description
-                            </div>
-                            </a>
-                        </div>
-                    
-                    <div class="case-item case-item--tower">
-                            <!--<canvas class="rellax" id="tower" width="700" height="700"></canvas>-->
-                    </div>
-                    
-                </div>             
-            
-            </section>
 
         </article>
-    </main>
-    
-    <div class="footer">
-        <div class="copyright">© Studio Smash 2018</div>
-        <div class="socialmedia">
-                <ul>
-                    <li><a href="#">FACEBOOK</a></li>
-                    <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#">TWITTER</a></li>
-                </ul>
-            </div>
-    </div>
+        
+		<article router-view="home">
 
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+			<section class="row">
+				
+				<div class="case-container" data-scroll="imageUp">
+				
+					<div class="case-image rellax">
+						<img src="./assets/img/svenskainstitutet/si0.jpg"/>
+					</div>
+				
+					<div class="case-text">
+					   	<a href="./svenska-institutet/">
+							<div class="case-title" data-scroll="fadeUpStaggerFirst">
+								Sweden through time
+							</div>
+							<span class="horizontal-line hidden" data-scroll="lineInRight"></span>
+							<div class="case-details" data-scroll="fadeDownStaggerSecond">
+								Svenska Institutet
+								<span class="tags">WebGL, Three.js</span>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				
+				<div class="case-container" data-scroll="imageUp">
+					  
+					<div class="case-text rellax">
+						<a href="./nutrinovate/">
+							<div class="case-title" data-scroll="fadeUpStaggerFirst">
+								Nutrinovate
+							</div>
+							<span class="horizontal-line hidden" data-scroll="lineInLeft"></span>
+							<div class="case-details" data-scroll="fadeDownStaggerSecond">
+								Case description
+							</div>
+						</a>
+					</div>
+				   
+					<div class="case-image">
+						<img class="" src="./assets/img/nutrinovate/vf1.jpg" />
+					</div>
+					
+				</div>
+				
+				<div class="case-container" data-scroll="imageUp">
+				   
+					<div class="case-image rellax">
+						<img src="./assets/img/magiskamaskinen/orebro01.jpg" />
+					</div>
+					
+					<div class="case-text">
+						<a href="./magiska-maskinen/">
+							<div class="case-title" data-scroll="fadeUpStaggerFirst">
+								Den magiska maskinen
+							</div>
+							<span class="horizontal-line hidden" data-scroll="lineInRight"></span>
+							<div class="case-details" data-scroll="fadeDownStaggerSecond">
+								Case description
+							</div>
+						</a>
+					</div>
+					
+				</div>
 
-    <script type="application/javascript" src="./dist/index.js"></script>
-    <script type="application/javascript" src="./assets/js/homepagesign.js"></script> -->
+			</section>
 
+		</article>
+
+	</main>
+	
+	<div class="footer">
+		<div class="copyright">© Studio Smash 2018</div>
+		<div class="socialmedia">
+			<ul>
+				<li><a href="#">FACEBOOK</a></li>
+				<li><a href="#">INSTAGRAM</a></li>
+				<li><a href="#">TWITTER</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+	<script type="application/javascript" src="./dist/index.js"></script>
+	<script type="application/javascript" src="./assets/js/homepagesign.js"></script> -->
 
 </body>
-
 </html>
