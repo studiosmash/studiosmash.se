@@ -1,0 +1,636 @@
+/* General */
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('./Graphik-Regular-Web.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Editor';
+    src: url('Editor.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Graphik';
+}
+
+p h5, h4, h3, h2, h1 {
+    margin: 0;
+}
+
+h1, h3 {
+    font-weight: 400;
+}
+
+ p {
+    color: #333;
+    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1rem + 0.25vw);
+    letter-spacing: 2;
+    line-height: 1.5;
+    /*max-width: 62ch;*/
+    padding: 2rem 0;
+    width: 50%;
+    margin: 0 auto;
+    text-transform: none;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 0rem 0 1rem;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+}
+
+
+/* Header */
+
+
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    height: 4rem;
+    width: 100%;
+    background: none;
+    color: #111;
+    align-items: center;
+    font-family: 'Graphik';
+}
+
+.header img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header_left {
+    float: left;
+    position: absolute;
+    padding: 0 2rem;
+}
+
+.header_right {
+    float: right;
+    right: 0;
+    position: absolute;
+    padding: 0 2rem;
+}
+
+.header_center {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Landing Hero */
+
+
+.hero {
+    position: relative;
+    background: #D8B1B2;
+    background: #efefef;
+    background-image: url(../media/img/zebra.svg);
+    background: url(../media/vid/text.mp4);
+    background-size: cover;
+    top: 0;
+    z-index: 998;
+    background: #39e4f5;
+    background: none;
+}
+
+.masking {
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.masking img,
+video {
+    object-fit: cover;
+    position: absolute;
+}
+
+.masking video {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 38vw;
+}
+
+.hero-title {
+    position: absolute;
+    color: #111;
+    left: 8rem;
+    font-size: calc(2.5rem + 1vw);
+    text-transform: none;
+    line-height: 1.25;
+    min-width: 30vw;
+    width: 60%;
+}
+
+.hero h1 {
+    color: #242424;
+    font-size: calc( 1rem + 1vw);
+    font-weight: 700;
+    width: 60%;
+}
+
+.hero p {
+    font-size: calc(1rem + 0.25vw);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.container .inner {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-0%, -50%);
+    /*text-align: center;*/
+}
+
+
+/* Case section */
+
+.case-section {
+    height: 200vh;
+    width: 100vw;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.case-container {
+    position: relative;
+    width: 80%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 20rem;
+}
+
+.case-container:nth-child(odd) .horizontal-line {
+    position: absolute;
+    display: block;
+    margin-left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    z-index: -1;
+}
+
+.case-container:nth-child(even) .horizontal-line {
+    position: absolute;
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    z-index: -1;
+}
+
+.case-container:nth-child(odd) .case-text {
+    position: relative;
+    width: 25%;
+    text-align: right;
+    line-height: 2;
+    top: -30%;
+}
+
+.case-container:nth-child(even) .case-text {
+    position: relative;
+    width: 25%;
+    text-align: left;
+    line-height: 2;
+    top: -30%;
+}
+
+.case-title {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.case-image {
+    position: relative;
+    height: inherit;
+    width: 75%;
+    float: left;
+}
+
+.case-item {
+    position: absolute;
+    z-index: 999;
+    /*width: 300px;
+    height: 300px;
+    top: 70%;
+    margin-top: 5rem;
+    left: 20%;
+    */
+    overflow: hidden;
+}
+
+
+/* Case Canvases */
+
+
+canvas {
+    background-color: none;
+}
+
+.case-item {
+    overflow: visible;
+    align-self: ;
+}
+
+.case-item--car {
+    width: 70vw;
+    height: 70vw;
+    left: 25%;
+    margin-top: 35%;
+}
+
+.case-item--vf {
+    width: 40vw;
+    height: 40vw;
+    left: 2.5%;
+    margin-top: 20%;
+}
+
+.case-item--tower {
+    width: 40vw;
+    height: 40vw;
+    left: 45%;
+    margin-top: 15%;
+}
+
+
+/* Sub-Pages */
+
+
+.cover-hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: visible;
+}
+
+.cover-blind {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 999;
+    display: none;
+}
+
+.cover-image {
+    position: absolute;
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.cover-title {
+    position: absolute;
+    color: #111;
+    /*left: 8rem;*/
+    right: 8rem;
+    font-size: calc(2.5rem + 1vw);
+    text-transform: none;
+    line-height: 1.25;
+    min-width: 30vw;
+    /*font-family: 'Editor';*/
+}
+
+.cover-subtitle {
+    position: absolute;
+    color: #111;
+    font-size: calc(1rem + 0.25vw);
+    text-transform: none;
+    font-family: 'Graphik';
+    max-width: 32ch;
+}
+
+.cover-item {
+    position: absolute;
+    left: -80%;
+    bottom: -30%;
+    width: 1000px;
+    height: 1000px;
+    z-index: 1111;
+    background: #CFE2E0;
+}
+
+.cover-item img {
+    object-fit: contain;
+}
+
+.cover-container {
+    position: relative;
+    margin: 12rem 0;
+}
+
+.cover-text {
+    position: relative;
+    margin: 12rem 0;
+}
+
+cover-media {
+    position: relative;
+    margin: 12rem 0;
+    height: 70vh;
+}
+
+.page-jumbotron {
+    position: relative;
+    height: 56.25vw;
+    width: 100vw;
+    margin: 12rem 0;
+    overflow: hidden;
+}
+
+
+/* Gage content */
+
+
+.page-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.page-content--image {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: red;
+    margin: 4rem 0;
+}
+
+.page-content:first-child() {
+    margin-top: 0rem;
+    width: 50%;
+    display: none;
+}
+
+.page-content--image:nth-last-child(n) {
+    margin-bottom: 0rem;
+}
+
+.page-content--text {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.page-btn--next {
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(2.5rem + 1vw);
+}
+
+
+/* Animations */
+
+
+.imageblock {
+    display: box;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+    background: #fff;
+}
+
+.block {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 1111;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #efefef;
+    z-index: 998;
+}
+
+.block-in {
+    position: relative;
+    /*
+    height: inherit;
+    width: 100%;
+    height: 43.75vw;
+    width: 70%;*/
+}
+
+.fade-in {}
+
+.project-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 48em) {
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+    .row {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .page-content--text {
+        padding: 2.5rem 0;
+    }
+    
+    .page-content--image {
+        margin: 0.5rem 0;
+    }
+}
+
+/*
+
+@media screen and (max-width: 48em) {
+    .header img {
+        width: 50px;
+    }
+    .header_left {
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .header_right {
+        padding: 0 1rem;
+    }
+    .hero-title {
+        position: absolute;
+        color: #111;
+        left: 2rem;
+        font-size: calc(1.5rem + 1vw);
+        text-transform: none;
+        line-height: 1.25;
+        min-width: 30vw;
+        width: 60%;
+    }
+    .cover-hero {
+        justify-content: center;
+        align-items: center;
+    }
+    .case-container {
+        padding: 4rem 0rem;
+        margin: 4rem 2rem;
+        width: 90%;
+    }
+    .cover-title {
+        right: 0;
+        left: 1rem;
+    }
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+    .cover-jumbotron,
+    .cover-container {
+        margin: 1rem 1rem;
+    }
+    .cover-item {
+        display: none;
+    }
+    .cover-content p {
+        margin: 0rem;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .block-in {
+        width: 90%;
+        margin: 0.5rem 0;
+        left: 5%;
+    }
+    .cover-next {
+        height: 25vh;
+    }
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .case-image {
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        float: left;
+    }
+    .case-container:nth-child(odd) .case-text {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        background: #efefef;
+        padding: 1rem;
+        left: -1rem;
+    }
+    .case-container:nth-child(even) .case-text {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        background: #efefef;
+        padding: 1rem;
+        right: -1rem;
+        z-index: 1;
+    }
+    .masking {
+        width: 60vw;
+        height: 60vw;
+        overflow: hidden;
+        position: relative;
+    }
+    .block [data-scroll="blockRevealUp"]
+}
+
+*/

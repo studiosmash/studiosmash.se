@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Studio Smash</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header_left">
+            <a href="./">Studio Smash</a>
+            <!--<a href="./"><img src="./img/smash_logo.svg"></a>-->
+        </div>
+        <div class="header_right">
+            <nav>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <main router-wrapper>
+        <article router-view="page">
+            <div class="cover-hero">
+                <!--<div class="overlay" data-scroll="blockRevealLeft"></div>-->
+                <div class="project-overlay">
+                    <div class="cover-image">
+                        <img src="./img/nutrivoate/vf1.jpg" />
+                    </div>
+                </div>
+                <div class="cover-title" data-rellax-speed="1">
+                    <div data-scroll="coverTitle" data-scroll="coverTitle">Nutivovate</div>
+                    <div class="cover-subtitle" data-scroll="coverSubtitle">
+                        <a href="page.html">
+                Sweden needed to stand out on the World stage.
+                </a>
+                        <div class="cover-client" data-scroll="coverSubtitle">
+                            <span>CLIENT</span>Vitamin Films
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="cover-item" data-scroll="itemIn">
+                    <canvas class="rellax" id="vitamin-film" width="500" height="500"></canvas>
+                </div>
+                -->
+            </div>
+            <div class="page-content row">
+                <div class="page-content--text">
+                   <h3 data-scroll="fadeUpStaggerLines">
+                       Nutivovate 
+                   </h3>
+                    <p class="fade-in" data-scroll="fadeUpStaggerLines">
+                        The Swedish pharmaceutical company is very unlike a lot of there big competitors. Nutivovate is run by two men, Micke and Magnus. Both ex-big pharma employees that are now hellbent on running their company differently. This was their approach when they contacted SMASH to create a short ad campaign. Thinking big, thinking outside of the box and questioning the norms were all big themes when developing the concept.
+                    </p>
+                </div>
+                
+                <div class="page-content--image">
+                    <div class="block" data-scroll="blockRevealLeft"></div>
+                    <img class="block-in" src="../img/nutrivoate/vf1.jpg" />
+
+                </div>
+
+                <div class="page-content--text">
+                    <p class="fade-in" data-scroll="fadeUpStaggerLines">
+                        We worked hard to build a set that was not only strange and beautiful but also had a degree of realism. Smash quickly immersed ourselves in dollhouse forums and youtube tutorials in an effort to build this set. Finding the right camera and lens to get the best angles then followed. Lastly the scene was tracked before putting in the 3d models.The combination of digital work alongside the physical production was a great experience.
+                    </p>
+                </div>
+
+                <div class="page-content--image">
+                    <div class="block" data-scroll="blockRevealRight"></div>
+                    <img class="block-in" src="./img/nutrivoate/vf2.jpg" />
+                </div>
+                
+                <div class="page-content--image">
+                    <div class="block" data-scroll="blockRevealLeft"></div>
+                    <img class="block-in" src="./img/nutrivoate/vf3.jpg" />
+                </div>
+                
+                <div class="page-content--image">
+                    <div class="block" data-scroll="blockRevealRight"></div>
+                    <img class="block-in" src="./img/nutrivoate/vf4.jpg" />
+                </div>
+
+            </div>
+
+            <div class="page-btn--next">
+                <a href="/magiskamaskinen.html">
+                    <div class="object" id="object" onmouseover="object">
+                        Next
+                    </div>
+                </a>
+            </div>
+            
+        </article>
+    </main>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <script type="application/javascript" src="./dist/index.js"></script>
+
+
+</body>
+
+</html>

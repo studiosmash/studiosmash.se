@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <style>
+        #loading {
+            z-index: 1111;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('spinner.gif') no-repeat center center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--<div id="loading"></div>-->
+    <div class="header">
+
+        <div class="header_left">
+            <a href="./">Studio Smash</a>
+            <!--<a href="./"><img src="./img/smash_logo.svg"></a>-->
+        </div>
+        <div class="header_right">
+            <nav>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <main router-wrapper>
+        <article router-view="page">
+
+            <div class="page-content row">
+                <div class="page-content--text">
+
+                    <div class="page-title">
+                        <h1 data-scroll="fadeUpStaggerLines">
+                            We are Studio Smash
+                        </h1>
+                    </div>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        Smash is a new kind of design studio that creates ethereal brand experiences. Combining 3D, with innovative technology and visual craftsmanship, we kindle emotions, we forge memories, we evoke wonder.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        We have a new way of thinking about collaboration.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        Smash is a collaborative network of experience designers coalescing around Stockholm, Sweden. We embrace people and perspectives, individuals and ideas and stand by the fact that a collective mind is greater than one. Forming organically around projects, we draw on our in-depth knowledge of multiple fields – from 3D websites to AR applications to projection mapping shows – creating bespoke and unique experiences that people can enjoy.
+                    </p>
+
+                    <p data-scroll="fadeUpStaggerLines">
+                        To create these moments, we have an obsessive attention to detail, use state-of-the-art technology and work closely with bold brands to turn unique ideas into profound realities.
+                        <br/><br/> Together, let’s Smash it.
+                    </p>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <script type="application/javascript" src="./dist/index.js"></script>
+
+
+</body>
+
+</html>
