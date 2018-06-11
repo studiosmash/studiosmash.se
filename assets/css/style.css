@@ -438,7 +438,7 @@ cover-media {
     height: 100%;
     width: 100%;
     background: none;
-    margin: 4rem 0;
+    /*margin: 4rem 0;*/
 }
 .page-content--fullscreen {
     margin: 0 auto;
