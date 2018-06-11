@@ -376,7 +376,7 @@ canvas {
     text-transform: none;
     font-family: 'Graphik';
     max-width: 32ch;
-    display: none;
+    display: block;
 }
 
 .cover-item {
