@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #1a1a1a;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #c5bcb3;
+      }
+
+      .cls-3 {
+        fill: #382d2d;
+      }
+
+      .cls-4 {
+        stroke: #707070;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-5, .cls-9 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #863b3b;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-6 {
+        font-size: 20px;
+      }
+
+      .cls-7 {
+        font-size: 13px;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset="0.113" stop-color="#c1b7ad"/>
+      <stop offset="0.892" stop-color="#c1b7ad"/>
+      <stop offset="1" stop-color="#ededed"/>
+      <stop offset="1" stop-color="gray"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.261" gradientTransform="translate(-0.938 -0.938) scale(2.875)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dedede"/>
+      <stop offset="1" stop-color="#b2b2b2"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-760 -312)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="500" height="400" transform="translate(760 812) rotate(-90)"/>
+    <g id="smash_logo" transform="translate(882 353)">
+      <g id="Layer_1" data-name="Layer 1">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" class="cls-2" d="M226.05,173.372l-3.976,10.6L208.44,147.62h7.953Z" transform="translate(-189.126 -133.941)"/>
+          <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-2" width="155.442" height="8.043" transform="translate(0.208)"/>
+          <path id="Path_2" data-name="Path 2" class="cls-2" d="M11.875,162.368a12.54,12.54,0,0,1,4.687.849,10.971,10.971,0,0,1,0,20.444,12.583,12.583,0,0,1-4.687.849v-7.977a3.211,3.211,0,0,0,1.2-.23,3.084,3.084,0,0,0,1.686-1.627,3.137,3.137,0,0,0,0-2.467,3.085,3.085,0,0,0-1.686-1.627,3.206,3.206,0,0,0-1.2-.23,12.54,12.54,0,0,1-4.687-.849,10.971,10.971,0,0,1,0-20.444,12.583,12.583,0,0,1,4.687-.849v7.98a3.211,3.211,0,0,0-1.2.23,3.084,3.084,0,0,0-1.685,1.628,3.137,3.137,0,0,0,0,2.467,3.085,3.085,0,0,0,1.686,1.627A3.206,3.206,0,0,0,11.875,162.368Z" transform="translate(-0.183 -134.477)"/>
+          <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-2" width="7.953" height="36.356" transform="translate(46.582 13.679)"/>
+          <path id="Path_3" data-name="Path 3" class="cls-2" d="M667.46,164.586l9.657,19.39h7.953L667.46,147.62l-17.61,36.356H657.8Z" transform="translate(-589.635 -133.941)"/>
+          <path id="Path_4" data-name="Path 4" class="cls-2" d="M998.915,161.771a12.539,12.539,0,0,1,4.687.849,10.971,10.971,0,0,1,0,20.444,12.582,12.582,0,0,1-4.687.849v-7.981a3.211,3.211,0,0,0,1.2-.23,3.083,3.083,0,0,0,1.686-1.627,3.136,3.136,0,0,0,0-2.467,3.084,3.084,0,0,0-1.686-1.627,3.206,3.206,0,0,0-1.2-.23,12.54,12.54,0,0,1-4.687-.849,10.971,10.971,0,0,1,0-20.444,12.583,12.583,0,0,1,4.687-.849v7.98a3.21,3.21,0,0,0-1.2.23,3.084,3.084,0,0,0-1.687,1.627,3.137,3.137,0,0,0,0,2.467,3.085,3.085,0,0,0,1.687,1.627A3.205,3.205,0,0,0,998.915,161.771Z" transform="translate(-895.764 -133.932)"/>
+          <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-2" width="7.953" height="36.356" transform="translate(120.431 13.679)"/>
+          <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-2" width="7.953" height="36.356" transform="translate(147.698 13.679)"/>
+          <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-2" width="155.651" height="8.073" transform="translate(0 55.655)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" class="cls-3" transform="translate(820 460)">
+      <rect class="cls-8" width="280" height="300"/>
+      <rect class="cls-9" x="0.5" y="0.5" width="279" height="299"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" class="cls-4" transform="translate(880 553)">
+      <rect class="cls-8" width="40" height="115" rx="3"/>
+      <rect class="cls-9" x="0.5" y="0.5" width="39" height="114" rx="2.5"/>
+    </g>
+    <g id="Rectangle_9" data-name="Rectangle 9" class="cls-4" transform="translate(1001 553)">
+      <rect class="cls-8" width="40" height="115" rx="3"/>
+      <rect class="cls-9" x="0.5" y="0.5" width="39" height="114" rx="2.5"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" class="cls-5" x2="218" transform="translate(851.5 510.5)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-5" y2="250" transform="translate(960.5 510.5)"/>
+    <text id="NEXT" class="cls-6" transform="translate(992 538)"><tspan x="0" y="0">NEXT</tspan></text>
+    <text id="LAST" class="cls-6" transform="translate(880 538)"><tspan x="0" y="0">LAST</tspan></text>
+    <text id="PROJECT_CONTROL" data-name="PROJECT CONTROL" class="cls-7" transform="translate(960 490)"><tspan x="-62.244" y="0">PROJECT CONTROL</tspan></text>
+  </g>
+</svg>

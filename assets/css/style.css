@@ -359,6 +359,16 @@ canvas {
     /*font-family: 'Editor';*/
 }
 
+.image-title {
+    position: absolute;
+    color: #fff;
+    right: 8rem;
+    font-size: calc(2.5rem + 1vw);
+    text-transform: none;
+    line-height: 1.25;
+    min-width: 30vw;
+}
+
 .cover-subtitle {
     position: absolute;
     color: #111;
@@ -429,6 +439,17 @@ cover-media {
     width: 100%;
     background: none;
     margin: 4rem 0;
+}
+.page-content--fullscreen {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-content:first-child() {
