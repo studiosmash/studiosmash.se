@@ -43,6 +43,7 @@
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 		<script>
+  		document.addEventListener("DOMContentLoaded", function() {
 			var myHomeContent = document.getElementById("home-content");
 			var controller = new ScrollMagic.Controller();
 			var scene = new ScrollMagic.Scene({
@@ -53,6 +54,7 @@
 								  {backgroundColor:"#ffffff", opacity: 1.0}
 								))
 							.addTo(controller);
+		});
 		</script>
 	<div class="header" data-scroll="">
 		<div class="logo">
