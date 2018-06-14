@@ -37,16 +37,17 @@
 				hompagesign);r.enableZoom=!1;r.enablePan=!1;r.minPolarAngle=Math.PI/3;r.maxPolarAngle=Math.PI/2;(new Date).getTime();window.addEventListener("resize",M,!1);document.addEventListener("mousemove",N,!1);window.addEventListener("scroll",function(a){D=window.scrollY})})();J()})();
 
 		</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 		<script>
+			var myHomeContent = document.getElementById("home-content");
 			var controller = new ScrollMagic.Controller();
 			var scene = new ScrollMagic.Scene({
 								triggerElement: "#home-content"
 							})
-							.setTween("#home-content", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-							.setTween(TweenMax.fromTo('#home-content', 0.5, 
+							.setTween(TweenMax.fromTo(myHomeContent, 0.5, 
 								  {backgroundColor:"#ffffff", opacity: 0.0},
 								  {backgroundColor:"#ffffff", opacity: 1.0}
 								))
