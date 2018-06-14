@@ -47,7 +47,8 @@
 			var myHomeContent = document.getElementById("home-content");
 			var controller = new ScrollMagic.Controller();
 			var scene = new ScrollMagic.Scene({
-								triggerElement: "#home-content"
+								triggerElement: myHomeContent,
+								duration:"50%"
 							})
 							.setTween(TweenMax.fromTo(myHomeContent, 0.5, 
 								  {backgroundColor:"#ffffff", opacity: 0.0},
