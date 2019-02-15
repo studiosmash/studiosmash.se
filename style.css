@@ -41,5 +41,6 @@ article img {
 }
 
 .sketchfab-embed-wrapper iframe {
+    margin-top: -50px;
     margin-bottom: -50px;
 }
