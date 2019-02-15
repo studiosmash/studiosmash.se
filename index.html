@@ -1,237 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-	<title>Studio Smash</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,user-scalable=no">
-	<link rel="stylesheet" href="./assets/css/style.css">
-  <style>
-    #hompagesign{display:block;position:fixed;width:100%;height:100%;margin:0;padding:0;background:#000000;z-index:5;top:0;left:0;}
-    #hompagesign canvas{margin-top:0px;}
-
-    main{display:block;position:relative;width:100%;min-height:100%;margin:100vh 0 0;padding:0;background:white;z-index:20;}
-  </style>
+    <title>Jonas Johansson</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="hompagesign"></div>
-
-  <script src="assets/js/three.min.js"></script>
-  <script src="assets/js/homepage.js"></script>
-		<script>
-			var hompagesign = document.getElementById("hompagesign"),
-				modelsFolder = 'assets/model/',
-				modelObj = 'neon.obj',
-				cubeMapFolder = 'assets/imgs/',
-				cameraStartPos = 2000,
-				cameraMaxPos = 5000,
-				allOnScroll = 0.20,			// percentage
-				cameraEasingFactor = 0.05;	// (0-1) closer to 1 less easing, closer to 0 stronger easing
-
-				(function(){function M(a){b.aspect=window.innerWidth/window.innerHeight;b.updateProjectionMatrix();f.setSize(window.innerWidth,window.innerHeight)}function N(a){a.preventDefault();w.x=a.clientX/window.innerWidth*2-1;w.y=2*-(a.clientY/window.innerHeight)+1;G.setFromCamera(w,b);a=G.intersectObjects(h);0<a.length?t!=a[0].object&&(t=a[0].object,x=(new Date).getTime()/1E3,k=a[0].object==l?u:a[0].object==m?y:a[0].object==n?z:a[0].object==p?A:a[0].object==q?B:g,a[0].object==l||a[0].object==m||a[0].object==
-				n||a[0].object==p||a[0].object==q)&&(H=.2>=Math.random(),I=.2>=Math.random(),C=2*Math.random()+3):t&&(k=g,t=null)}function J(){requestAnimationFrame(J);var a=(new Date).getTime()/1E3-x;.33>a&&H?(a=Math.sin(33*a),e.material=0<a?k:g):a>C&&a<.33+C&&I?(a=Math.sin(33*a),e.material=0<a?k:g):0<x&&(e.material=k);var c=window.innerHeight;a=window.innerWidth/c;var d=K(cameraStartPos,cameraMaxPos,D/window.innerHeight);b.position.z=K(b.position.z,d,cameraEasingFactor);D>c*allOnScroll?(E||(L=(new Date).getTime()/
-				1E3),E=!0,c=(new Date).getTime()/1E3-L,e.material=.75>c?0<Math.sin(25*c*(.5>c?1:2))?v:g:v):E=!1;c=70/(.5-1.4);d=50-1.4*c;1.4>a?(b.fov=c*a+d,b.updateProjectionMatrix()):50!=b.fov&&(b.fov=50,b.updateProjectionMatrix());f.render(F,b)}function K(a,b,d){d=0>d?0:d;return a+(b-a)*(1<d?1:d)}Detector.webgl||Detector.addGetWebGLMessage();var b,F,f,r,e,g,u,y,z,A,B,v,l,m,n,p,q,G=new THREE.Raycaster,w=new THREE.Vector2,t,h=[],k,x=0,L=0,E=!1,H=.2>=Math.random(),I=.2>=Math.random(),C=2*Math.random()+3,D=0;(function(){b=
-				new THREE.PerspectiveCamera(50,window.innerWidth/window.innerHeight,1,1E4);b.position.z=2E3;var a=[cubeMapFolder+"px.jpg",cubeMapFolder+"nx.jpg",cubeMapFolder+"py.jpg",cubeMapFolder+"ny.jpg",cubeMapFolder+"pz.jpg",cubeMapFolder+"nz.jpg"];(new THREE.CubeTextureLoader).load(a).format=THREE.RGBFormat;F=new THREE.Scene;g=new THREE.MeshBasicMaterial({color:16777215});u=new THREE.MeshBasicMaterial({color:16777215});y=new THREE.MeshBasicMaterial({color:16777215});z=new THREE.MeshBasicMaterial({color:16777215});
-				A=new THREE.MeshBasicMaterial({color:16777215});B=new THREE.MeshBasicMaterial({color:16777215});v=new THREE.MeshBasicMaterial({color:16777215});a=new THREE.TextureLoader;var c=new THREE.OBJLoader;g.map=a.load(modelsFolder+"letter0.jpg");u.map=a.load(modelsFolder+"letter1.jpg");y.map=a.load(modelsFolder+"letter2.jpg");z.map=a.load(modelsFolder+"letter3.jpg");A.map=a.load(modelsFolder+"letter4.jpg");B.map=a.load(modelsFolder+"letter5.jpg");v.map=a.load(modelsFolder+"letterall.jpg");c.setPath(modelsFolder);
-				c.load(modelObj,function(a){e=a.children[0];e.material=u;a=new THREE.MeshBasicMaterial({color:16777215,opacity:0,transparent:!0});var b=new THREE.BoxGeometry(400,700,200),c=new THREE.BoxGeometry(520,700,200),d=new THREE.BoxGeometry(500,700,200),f=new THREE.BoxGeometry(400,700,200),g=new THREE.BoxGeometry(600,700,200),k=new THREE.BoxGeometry(5E3,5E3,10);l=new THREE.Mesh(b,a);m=new THREE.Mesh(c,a);n=new THREE.Mesh(d,a);p=new THREE.Mesh(f,a);q=new THREE.Mesh(g,a);boxbg=new THREE.Mesh(k,a);l.position.x=
-				-1070;m.position.x=-600;n.position.x=-50;p.position.x=400;q.position.x=960;l.position.y=m.position.y=n.position.y=p.position.y=q.position.y=0;e.add(l,m,n,p,q,boxbg);h.push(l);h.push(m);h.push(n);h.push(p);h.push(q);h.push(boxbg);e.rotation.x=2*Math.PI/360*-5;e.rotation.y=2*Math.PI/360*-5;F.add(e)});f=new THREE.WebGLRenderer({antialias:!0});f.setClearColor(0,0);f.setPixelRatio(window.devicePixelRatio);f.setSize(window.innerWidth,window.innerHeight);hompagesign.appendChild(f.domElement);r=new THREE.OrbitControls(b,
-				hompagesign);r.enableZoom=!1;r.enablePan=!1;r.minPolarAngle=Math.PI/3;r.maxPolarAngle=Math.PI/2;(new Date).getTime();window.addEventListener("resize",M,!1);document.addEventListener("mousemove",N,!1);window.addEventListener("scroll",function(a){D=window.scrollY})})();J()})();
-
-		</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-		<script>
-  		document.addEventListener("DOMContentLoaded", function() {
-			var myHomeContent = document.getElementById("home-content");
-			var controller = new ScrollMagic.Controller();
-			var scene = new ScrollMagic.Scene({
-								triggerElement: myHomeContent,
-								duration:"75%"
-							})
-							.setTween(TweenMax.fromTo(myHomeContent, 0.5, 
-								  {backgroundColor:"#ffffff", opacity: 0.0},
-								  {backgroundColor:"#ffffff", opacity: 1.0}
-								))
-							.addTo(controller);
-		});
-		</script>
-	<div class="header" data-scroll="">
-		<div class="logo">
-			<a href="./"><img src="./assets/img/smash_logo.svg"></a>
-		</div>
-		<div class="nav">
-			<nav>
-				<ul>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-
-	<main router-wrapper id="home-content">
-
-        <article router-view="page">
-
-            <div class="page-content row">
-                <div class="page-content--text">
-
-                    <div class="page-title">
-                        <h1 data-scroll="fadeUpStaggerLines">
-                            We are Studio Smash
-                        </h1>
-                    </div>
-
-                    <p data-scroll="fadeUpStaggerLines">
-                        Smash is a new kind of design studio that creates ethereal brand experiences. Combining 3D, with innovative technology and visual craftsmanship, we kindle emotions, we forge memories, we evoke wonder.
-                    </p>
-
-                    <p data-scroll="fadeUpStaggerLines">
-                        We have a new way of thinking about collaboration.
-                    </p>
-
-                    <p data-scroll="fadeUpStaggerLines">
-                        Smash is a collaborative network of experience designers coalescing around Stockholm, Sweden. We embrace people and perspectives, individuals and ideas and stand by the fact that a collective mind is greater than one. Forming organically around projects, we draw on our in-depth knowledge of multiple fields – from 3D websites to AR applications to projection mapping shows – creating bespoke and unique experiences that people can enjoy.
-                    </p>
-
-                    <p data-scroll="fadeUpStaggerLines">
-                        To create these moments, we have an obsessive attention to detail, use state-of-the-art technology and work closely with bold brands to turn unique ideas into profound realities.
-                        <br/><br/> Together, let’s Smash it.
-                    </p>
-                </div>
-            </div>
-
-        </article>
-        
-		<article router-view="home">
-
-			<section class="row">
-				
-				<div class="case-container" data-scroll="imageUp">
-				
-					<div class="case-image rellax">
-						<img src="./assets/img/svenskainstitutet/si0.jpg"/>
-					</div>
-				
-					<div class="case-text">
-					   	<a href="./svenska-institutet/">
-							<div class="case-title" data-scroll="fadeUpStaggerFirst">
-								Sweden through time
-							</div>
-							<span class="horizontal-line hidden" data-scroll="lineInRight"></span>
-							<div class="case-details" data-scroll="fadeDownStaggerSecond">
-								Svenska Institutet
-								<span class="tags">WebGL, Three.js</span>
-							</div>
-						</a>
-					</div>
-					
-				</div>
-				
-				<div class="case-container" data-scroll="imageUp">
-					  
-					<div class="case-text rellax">
-						<a href="./nutrinovate/">
-							<div class="case-title" data-scroll="fadeUpStaggerFirst">
-								Nutrinovate
-							</div>
-							<span class="horizontal-line hidden" data-scroll="lineInLeft"></span>
-							<div class="case-details" data-scroll="fadeDownStaggerSecond">
-								<span class="tags">Set Buidling, Film & 3D</span>
-							</div>
-						</a>
-					</div>
-				   
-					<div class="case-image">
-						<img class="" src="./assets/img/nutrinovate/vf1.jpg" />
-					</div>
-					
-				</div>
-				
-				<div class="case-container" data-scroll="imageUp">
-				   
-					<div class="case-image rellax">
-						<img src="./assets/img/magiskamaskinen/orebro01.jpg" />
-					</div>
-					
-					<div class="case-text">
-						<a href="./magiska-maskinen/">
-							<div class="case-title" data-scroll="fadeUpStaggerFirst">
-								Den magiska maskinen
-							</div>
-							<span class="horizontal-line hidden" data-scroll="lineInRight"></span>
-							<div class="case-details" data-scroll="fadeDownStaggerSecond">
-								<span class="tags">3D Animation Projection Show</span>
-							</div>
-						</a>
-					</div>
-					
-				</div>
-				
-				<div class="case-container" data-scroll="imageUp">
-					  
-					<div class="case-text rellax">
-						<a href="./arbetsformedlingen/">
-							<div class="case-title" data-scroll="fadeUpStaggerFirst">
-								Arbetsförmedlingen
-							</div>
-							<span class="horizontal-line hidden" data-scroll="lineInLeft"></span>
-							<div class="case-details" data-scroll="fadeDownStaggerSecond">
-								<span class="tags"><!--add description--></span>
-							</div>
-						</a>
-					</div>
-				   
-					<div class="case-image">
-						<img class="" src="./assets/img/transcend/Transcend01.jpg" />
-					</div>
-					
-				</div>
-				
-				<div class="case-container" data-scroll="imageUp">
-				   
-					<div class="case-image rellax">
-						<img src="./assets/img/funyard/Beckmans01.jpg" />
-					</div>
-					
-					<div class="case-text">
-						<a href="./funyard/">
-							<div class="case-title" data-scroll="fadeUpStaggerFirst">
-								Funyard
-							</div>
-							<span class="horizontal-line hidden" data-scroll="lineInRight"></span>
-							<div class="case-details" data-scroll="fadeDownStaggerSecond">
-								<span class="tags"><!--add description--></span>
-							</div>
-						</a>
-					</div>
-					
-				</div>
-
-			</section>
-
-		</article>
-
-	</main>
-	
-	<div class="footer">
-		<div class="copyright">© Studio Smash 2018</div>
-		<div class="socialmedia">
-			<ul>
-				<li><a target="_blank" href="https://m.facebook.com/studiosmash">FACEBOOK</a></li>
-				<li><a target="_blank" href="https://www.instagram.com/studio.smash/">INSTAGRAM</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-
-	<script type="application/javascript" src="./dist/index.js"></script>
-	<script type="application/javascript" src="./assets/js/homepagesign.js"></script> -->
-
+    <header>
+        <nav>
+            <a>Projects</a>
+            <a>Studio</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+        </section>
+        <section id="work">
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>QDB Qatar</h2>
+            </article>
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>Fjord</h2>
+            </article>
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>Postnord</h2>
+            </article>
+            <article>
+                <h1>We are Studio Smash</h1>
+                <p>Smash is a new kind of design studio that creates unique and innovative brand experiences. Combining 3D, with the latest technology and visual craftsmanship, we kindle emotions, we forge memories, we evoke wonder.</p>
+                <p>We have a new way of thinking about collaboration. Smash is a collaborative network of experience designers coalescing around Stockholm, Sweden. We embrace people and perspectives, individuals and ideas and stand by the fact that a collective mind is greater than one. Forming organically around projects, we draw on our in-depth knowledge of multiple fields – from 3D websites to AR applications to projection mapping shows – creating bespoke and unique experiences that people can enjoy.</p>
+                <p>To create these moments, we have an obsessive attention to detail, use state-of-the-art technology and work closely with bold brands to turn unique ideas into profound realities. Together, let’s Smash it.</p>
+            </article>
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>Sweden through time / Swedish Institute</h2>
+            </article>
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>Örebro Kompaniet / Mediatec</h2>
+            </article>
+            <article>
+                <figure>
+                    <img>
+                </figure>
+                <h2>Funyard</h2>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
-</html>
