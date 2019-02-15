@@ -4,6 +4,8 @@ body {
 
 nav {
     position: fixed;
+    top: 40px;
+    left: 40px;
     padding: 40px;
 }
 
