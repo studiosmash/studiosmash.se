@@ -35,3 +35,11 @@ article img {
     height: 40vw;
     background-color: lightgray;
 }
+
+.sketchfab-embed-wrapper {
+    overflow: hidden;
+}
+
+.sketchfab-embed-wrapper iframe {
+    margin-bottom: -50px;
+}
