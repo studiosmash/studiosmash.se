@@ -31,8 +31,8 @@ section article {
 }
 
 article img {
-    width: 20vw;
     height: 40vw;
+    object-fit: contain;
     background-color: lightgray;
 }
 
