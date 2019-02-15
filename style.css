@@ -1,17 +1,29 @@
-body {
+body,
+figure {
     margin: 0;
+}
+
+html {
+    font: 18px/1.5 system-ui;
 }
 
 nav {
     position: fixed;
     top: 40px;
     left: 40px;
-    padding: 40px;
 }
 
 nav a:not(:last-child) {
     margin-right: 40px;
 }
+
+article img {
+    width: 100%;
+    object-fit: contain;
+    background-color: lightgray;
+}
+
+/* section, article */
 
 section#hero {
     background-color: gray;
@@ -22,25 +34,47 @@ section#hero {
 section#work {
     min-height: 100vh;
     margin-top: 15vw;
+    padding: 0 15vw;
 }
 
 section article {
-    width: 60vw;
-    margin-left: 20vw;
     margin-bottom: 15vw;
 }
 
-article img {
-    height: 40vw;
-    object-fit: contain;
-    background-color: lightgray;
+/* home */
+
+#home section article {
+    width: 60vw;
+    /*margin-left: 20vw;*/
 }
 
-.sketchfab-embed-wrapper {
+/* page */
+
+#page {
+    background-color: #ccc;
+}
+
+#page section article {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#page iframe,
+#page figure {
+    width: 100%;
+}
+
+/* classes */
+
+.text {
+    margin: 0 auto;
+}
+
+.sketchfab {
     overflow: hidden;
 }
 
-.sketchfab-embed-wrapper iframe {
+.sketchfab iframe {
     margin-top: -50px;
     margin-bottom: -50px;
 }
