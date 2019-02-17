@@ -130,12 +130,12 @@ section article {
     box-sizing: border-box;
 }
 
-.sketchfab {
-    /*position: relative;*/
-    /*overflow: hidden;*/
+.sketchfab .inner {
+    position: relative;
+    overflow: hidden;
 }
 
-.sketchfab iframe {
+.sketchfab .inner iframe {
     /*margin-top: -50px;*/
-    /*margin-bottom: -50px;*/
+    margin-bottom: -50px;
 }
