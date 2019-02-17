@@ -1,10 +1,22 @@
+@import url(type/type.css);
+
 body,
 figure {
     margin: 0;
 }
 
-html {
-    font: 18px/1.5 system-ui;
+html,
+body {
+    font-size: 27px;
+    line-height: 1.34em;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Random', 'sans-serif';
+    font-weight: lighter;
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    font-feature-settings: 'kern';
 }
 
 nav {
@@ -34,7 +46,6 @@ section#hero {
 section#work {
     min-height: 100vh;
     margin-top: 15vw;
-    padding: 0 15vw;
 }
 
 section article {
@@ -42,6 +53,10 @@ section article {
 }
 
 /* home */
+
+#home section#work {
+    padding: 0 15vw;
+}
 
 #home section article {
     width: 60vw;
@@ -51,7 +66,7 @@ section article {
 /* page */
 
 #page {
-    background-color: #ccc;
+    background-color: #bfbfbf;
 }
 
 #page section article {
@@ -60,14 +75,43 @@ section article {
 }
 
 #page iframe,
-#page figure {
+#page figure,
+#page img {
     width: 100%;
+}
+
+#page section {
+    width: 90%;
+    margin-left: 5vw;
+    margin-top: 10vw;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* classes */
 
 .text {
     margin: 0 auto;
+    font-size: 40px;
+    line-height: 1.2931578947em;
+    letter-spacing: 0.01em;
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .sketchfab {
