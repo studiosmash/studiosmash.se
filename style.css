@@ -41,6 +41,10 @@ nav a:not(:last-child) {
     margin-right: 40px;
 }
 
+iframe {
+    border: 0;
+}
+
 article img {
     width: 100%;
     object-fit: contain;
@@ -127,10 +131,11 @@ section article {
 }
 
 .sketchfab {
-    overflow: hidden;
+    /*position: relative;*/
+    /*overflow: hidden;*/
 }
 
 .sketchfab iframe {
     /*margin-top: -50px;*/
-    margin-bottom: -50px;
+    /*margin-bottom: -50px;*/
 }
