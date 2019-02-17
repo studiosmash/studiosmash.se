@@ -19,10 +19,22 @@ body {
     font-feature-settings: 'kern';
 }
 
-nav {
+header {
+    top: 0;
+    color: white;
+    mix-blend-mode: difference;
     position: fixed;
-    top: 40px;
-    left: 40px;
+    width: 100%;
+    padding: 1.4rem;
+    line-height: 1;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 8em;
 }
 
 nav a:not(:last-child) {
